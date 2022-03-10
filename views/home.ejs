@@ -1,0 +1,19 @@
+<%- include('header') -%>
+<%- include('Navbar') -%>
+
+<div class="main-blog">
+    <% for(var i=0;i<blogList.length;i++) { %>
+<h1 class="blog-title"><%= blogList[i].title %></h1>
+ <% if(blogList[i].title==="Home"){ %>
+<p><%=blogList[i].content%></p>
+   <% }else{ %>
+    <div class="mainDiv">
+        <p class="PublishedBlog"><%=blogList[i].content%></p>
+        <% if(blogList[i].content.length>100){ %>
+        <a class="readmore" href="/posts/<%= blogList[i]._id %>">ReadMore</a>
+    <% } %>
+</div>
+<% }  } %>
+</div>
+
+<%- include('footer') -%>

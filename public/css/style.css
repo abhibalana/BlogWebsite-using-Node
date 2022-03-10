@@ -1,0 +1,64 @@
+.navbar-brand{
+    margin-left: 30px;
+    letter-spacing: 2px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+}
+.blog-title{
+    margin-top: 10px;
+}
+.navbar-nav{
+margin-right: 100px;
+font-size: 20px;
+word-spacing: 20px;
+letter-spacing: 5px;
+}
+ .foot{
+    text-align: center;
+    background-color: lightslategray;
+    position: relative;
+    margin-top: 100%;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+}
+.main-blog{
+    margin: 2% 10%;
+}
+.compose{
+    margin: 2% 10%;
+}
+.title ,.blog{
+    width: 70%;
+    padding: 10px;
+    border: 2px black solid;
+    margin: 15px 0px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-size: 22px;
+    display: block;
+    border-radius: 4px;
+}
+
+.blog{
+    height: 240px;
+    font-size: 18px;
+    font-weight: normal;
+    
+}
+.PublishedBlog{
+max-width: 100ch;
+overflow: hidden;
+text-overflow: ellipsis;
+white-space: nowrap;
+}
+.mainDiv{
+    width: 100%;
+    display: inline-flex;
+}
+.readmore{
+    text-decoration: none;
+}
+.blog-content{
+    overflow-wrap: break-word;
+}
