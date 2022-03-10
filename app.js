@@ -97,8 +97,13 @@ app.get("/contact",function(req,res){
     res.render("mainblogs",{heading:"Contact",blog:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."});
    });
 
+   let port =process.env.PORT;
+   if(port == null||port == " "){
+       port=3000;
+   }
 
 
-app.listen(3000,function(){
+
+app.listen(port,function(){
 console.log("port start listening at 3000")
 });
